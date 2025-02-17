@@ -1,145 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
 
-    <!DOCTYPE html>
-    <html lang="es">
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
 
-        <style>
-        body{
-            font-family: 'Courier New', Courier, monospace;
-            
+    .container img {
+        max-width: 130px;
+        margin-right: 10px;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+ 
+
+    .caja1 {
+        width: 300px;
+        height: 360px;
+        border: 1px solid #000;
+
+    }
+
+
+    .parte1 {
+        height: 22%;
+        border: 0.7px solid black;
+
+    }
+
+    .parte2 {
+        height: 12%;
+        border: 0.7px solid black;
+
+    }
+
+    .parte3 {
+        height: 40.2%;
+        border: 0.7px solid black;
+
+    }
+
+    .caja2 {
+        width: 300px;
+        height: 360px;
+        border: 1px #000;
+        flex-basis: 45%;
+    }
+
+
+    .partess1 {
+        height: 45%;
+        border: 0.7px solid black;
+    }
+
+    .partess2 {
+        height: 55%;
+        border: 0.7px solid black;
+    }
+
+    .caja3 {
+        flex: 1;
+        max-width: 35%;
+        min-width: 250px;
+        height: 360px;
+        border: 0.7px solid black;
+
+    }
+
+    .clase {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+
+    h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    :root {
+        --background-color: #fcf6f6;
+        --text-color: #070707;
+        --border-color: #000000;
+    }
+
+    .dark-mode {
+        --background-color: #161515;
+        --text-color: #f3f1f1;
+        --border-color: #111010;
+    }
+
+    @media (max-width: 768px) {
+        .container img {
+            max-width: 100px;
         }
-            .container {
-                display: flex; 
-                align-items: center;
-            }
-            .container img {
-                max-width: 130px; 
-                margin-right: 10px; 
-            }
 
-            .contenedor{
-                display: flex;
-            
-            }
+        .caja1,
+        .caja2,
+        .caja3 {
+            width: 100%;
+            max-width: 100%;
+        }
 
-            .caja1{
-                width: 300px; 
-                height: 360px; 
-                border: 1px solid #000; 
-            }
-            .parte1 {
-                height: 22%;
-                border: 0.7px solid black;
-            }
-            .parte2 {
-                height: 12%;
-                border: 0.7px solid black;
-            }
-            .parte3 {
-                height: 40.2%;
-                border: 0.7px solid black;
-            }
-            .caja2{
-                width: 300px; 
-                height: 360px; 
-                border: 1px #000; 
-                flex-basis: 45%;
-            }
-            .partess1 {
-                height: 45%;
-                border: 0.7px solid black;
-            }
-            .partess2{
-                height: 55%;
-                border: 0.7px solid black;
-            }
-        
-            .caja3{
-                display: flex;
-                border: 2px solid black;          
-                flex-basis: 35%;
-                height: 360px;
-            }
-        
-            .clase {
-                display: flex;
-            }
-            .clase4{
-                display: flex;
-                margin: 70px 10px 40px 0px;
-                flex-basis: 100px;
-                padding: 90px;
-                border-radius: 70px ;
-                border: 0.7px solid black;
-                background-color: rgb(243, 209, 165);
+      
 
-            }
-        /* h2{
-            display: flex;
-            text-align: center;  
-        } */
-        </style>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Ca presentaremos diferentes menus para que nos conoscas y tambien la exposion de uno de nuestro productos.">
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
 
-        <meta name="description" content="Es un yogurt 100% artesanal, rico, cremoso y disponible en el sabor que desees.">
-        <meta name="keywords" content="artesanal,cremoso, fresco, saludable">
-        <meta name="author" content="Katerin Cely">
+    .clase4 {
+        display: flex;
+        margin: 70px 10px 40px 0px;
+        flex-basis: 100px;
+        padding: 90px;
+        border-radius: 70px;
+        border: 0.7px solid black;
+        background-color: rgb(243, 209, 165);
+    }
 
-        <meta property="og:title" content="yogurt artesanal_El Viajero"> <!--titulo que se muestra cuando se comparte la paguina -->
-        <meta property="og:description" content="Yogurt El Viajero es un yogurt artesanal, hecho con leche fresca y cultivos naturales, ofrece una experiencia única de sabor auténtico y beneficios probióticos. ¡Disfruta del sabor fresco de cada viaje!">
-        <meta property="og:image" content="Es la presentacion de nuestros diversos sabores de nuestro yogurt">
-        <meta property="og:url" content="Para que las plataformas de las redes sociales sepan que direccion web debe compartir">
-        <meta property="og:type" content="El tipo de contenido que se comparte">
+    @media (max-width: 480px) {
 
-        <title>Página de Inicio</title>
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="https://fonts.google.com/">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="Articles.html">Articles</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <div class="container">
+
+        .caja1,
+        .caja2,
+        .caja3 {
+            height: auto;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Ca presentaremos diferentes menus para que nos conoscas y tambien la exposion de uno de nuestro productos." />
+    <meta name="description"
+        content="Es un yogurt 100% artesanal, rico, cremoso y disponible en el sabor que desees." />
+    <meta name="keywords" content="artesanal,cremoso, fresco, saludable" />
+    <meta name="author" content="Katerin Cely" />
+    <meta property="og:title" content="yogurt artesanal_El Viajero" />
+    <meta property="og:description"
+        content="Yogurt El Viajero es un yogurt artesanal, hecho con leche fresca y cultivos naturales, ofrece una experiencia única de sabor auténtico y beneficios probióticos. ¡Disfruta del sabor fresco de cada viaje!" />
+    <meta property="og:image" content="Es la presentacion de nuestros diversos sabores de nuestro yogurt" />
+    <meta property="og:url"
+        content="Para que las plataformas de las redes sociales sepan que direccion web debe compartir" />
+    <meta property="og:type" content="El tipo de contenido que se comparte" />
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://fonts.google.com/" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="Articles.html">Articles</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <div class="container">
+                    <a href="https://katerincely.github.io/sitioweb/">
                         <img src="img/img1.jpeg" alt="">
-                        <p>Katerín Cely Díaz</p>
-                    </div>
-                </ul>
-                <h1>Frontend Developer</h1>
-            </nav>
-        </header>
-    
-        <div class="contenedor">
-            <div class="caja1">
-                <div class="parte1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                <div class="parte2">Lorem ipsum dolor.</div>
-                <div class="parte2">Lorem ipsum dolor</div>
-                <div class="parte2">Lorem ipsum dolor</div>
-                <div class="parte3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, impedit dolore ipsam culpa.</div>
-            </div>
-            <div class="caja2">
-                <div class="partess1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam aliquam quisquam fugiat facere ad repellendus mollitia sit vero, et, debitis porro nam facilis est cum asperiores culpa modi commodi.</div>
-                <div class="partess2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nemo quae ullam sequi voluptates veniam quia nisi nesciunt. Iusto illo ratione minima similique modi, magni omnis vero! Quod, recusandae iste!</div>
-            </div>
-            <div class="caja3">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, nobis consequatur, earum magni cupiditate voluptas ipsam assumenda fuga necessitatibus maiores suscipit. Harum id accusamus est tempore fugiat? Sed, quas non?</p>
+                    </a>
+                    <p>Katerín Cely Díaz</p>
+                </div>
+            </ul>
 
+            <h1>Frontend Developer</h1>
+            <button id="toggle-dark-mode"> Mode</button>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <div class="caja1">
+            <div class="parte1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+            <div class="parte2">Lorem ipsum dolor.</div>
+            <div class="parte2">Lorem ipsum dolor</div>
+            <div class="parte2">Lorem ipsum dolor</div>
+            <div class="parte3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+        </div>
+        <div class="caja2">
+            <div class="partess1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="partess2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nemo quae ullam sequi voluptates
+                veniam quia nisi nesciunt. Iusto illo ratione minima similique modi, magni omnis vero! Quod, recusandae
+                iste!
             </div>
         </div>
-        <div class="clase">
-            <h2>Frontend Developer</h2><br>
-            <div class="clase4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-            <div class="clase4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-            <div class="clase4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="caja3">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, nobis consequatur, earum magni
+                cupiditate voluptas ipsam assumenda fuga necessitatibus maiores suscipit. Harum id accusamus est tempore
+                fugiat? Sed, quas non?
+            </p>
         </div>
-    
-        <footer>
-            <p>&copy; all rights reserved 2025</p>
-        </footer>
-    </body>
-    </html>
+    </div>
+    <div class="clase">
+        <h2>Frontend Developer</h2><br />
+        <div class="clase4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="clase4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="clase4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+
+    <footer>
+        <p>&copy; all rights reserved 2025</p>
+    </footer>
+    <script>
+        const toggleButton = document.getElementById("toggle-dark-mode");
+        toggleButton.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+
+</html>
